@@ -44,6 +44,19 @@ to the dashboard.
 
 ---
 
+## Live UI Mockup
+
+An interactive prototype of the compliance dashboard is available here:
+
+🔗 **[SCuBA Compliance Dashboard – Live Mockup](https://copilot.microsoft.com/shares/artifacts/s186XQjFViCyfnMEYR2QG)**
+
+The mockup demonstrates all major UI components:
+- Scan button with live status simulation
+- Filterable findings table (20 SCuBA controls across Teams, Exchange, AAD, SharePoint, Defender, and more)
+- Per-row Fix / Break buttons with audit log output
+- Summary cards and compliance score badge
+---
+
 ## Prerequisites
 
 Install and verify each item before running the app.
