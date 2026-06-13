@@ -1,0 +1,209 @@
+        {
+                "baseline_version": "1",
+                "module_version": "1.8.0",
+                "date": "06/13/2026 10:50:25 Eastern Daylight Time",
+                "timestamp_zulu": "2026-06-13T14:50:25.916Z",
+                "report_uuid": "8258fef8-02a8-4809-9f7c-be4430f045d0",
+                "tenant_details": [
+    {
+        "AADAdditionalData":  "Error retrieving additional data",
+        "TenantId":  "Error retrieving Tenant ID",
+        "DisplayName":  "Error retrieving Display name",
+        "DomainName":  "Error retrieving Domain name"
+    }
+],
+                "scuba_config": {
+    "OutPath":  "C:\\dev\\scuba-poc\\scuba-output",
+    "OutFolderName":  "M365BaselineConformance",
+    "SkipDoH":  false,
+    "OPAPath":  "C:\\Users\\claud\\.scubagear\\Tools",
+    "PreferredDnsResolvers":  [
+
+                              ],
+    "OutJsonFileName":  "ScubaResults",
+    "LogIn":  true,
+    "KeepIndividualJSON":  {
+                               "IsPresent":  false
+                           },
+    "OutCsvFileName":  "ScubaResults",
+    "OutReportName":  "BaselineReports",
+    "OutProviderFileName":  "ProviderSettingsExport",
+    "Organization":  "",
+    "NumberOfUUIDCharactersToTruncate":  18,
+    "AppID":  "",
+    "OutRegoFileName":  "RegoOutput",
+    "M365Environment":  "commercial",
+    "DisconnectOnExit":  {
+                             "IsPresent":  false
+                         },
+    "ProductNames":  "aad",
+    "OutActionPlanFileName":  "ActionPlan",
+    "CertificateThumbprint":  ""
+},
+                    "conditional_access_policies": [
+
+],
+    "cap_table_data": [],
+    "authorization_policies": [
+
+],
+    "privileged_users": [
+
+],
+    "privileged_service_principals": "[\r\n\r\n]",
+    "privileged_roles": [
+
+],
+    "service_plans": [
+
+],
+    "directory_settings": [
+
+],
+    "authentication_method": [
+    {
+        "authentication_method_feature_settings":  [
+
+                                                   ],
+        "authentication_method_policy":  {
+
+                                         }
+    }
+],
+    "domain_settings": [
+
+],
+    "license_information": ,
+    "license_state": [
+    {
+        "is_expiring_soon":  false,
+        "is_expired":  false,
+        "state":  "NoLicense",
+        "has_active_plans":  false,
+        "state_reason":  "No subscribed SKUs were found for the tenant.",
+        "days_until_expiration":  null,
+        "has_any_sku":  false,
+        "warning_days_threshold":  30
+    }
+],
+    "total_user_count": -1,
+    "risky_applications": [
+
+],
+    "risky_third_party_service_principals": [
+
+],
+    "severity_score_weights": {
+    "PermissionRiskLevelWeights":  {
+                                       "Low":  2,
+                                       "Critical":  50,
+                                       "Description":  "Risk level weights are assigned based on the level of access granted by each permission.",
+                                       "Medium":  5,
+                                       "High":  15
+                                   },
+    "PermissionVolume":  {
+                             "PointsPer10Permissions":  1,
+                             "Description":  "Over-permissioned applications/service principals represent an increased attack surface regardless of individual permission risk level."
+                         },
+    "MultiTenant":  {
+                        "Description":  "Multi-tenant applications can be used across multiple organizations, increasing their attack surface.",
+                        "Points":  10
+                    },
+    "ThirdPartyServicePrincipal":  {
+                                       "Description":  "Third-party service principals are owned by external organizations and do not fall under the same security policies as internal service principals.",
+                                       "Points":  20
+                                   },
+    "PrivilegedRoles":  {
+                            "Description":  "Service principals with privileged roles (e.g., Global Administrator) have elevated permissions and pose a higher risk.",
+                            "PointsPerRole":  8
+                        },
+    "CredentialContextWeights":  {
+                                     "Low":  5,
+                                     "Critical":  50,
+                                     "Description":  "Credential base points dynamically scale by the highest risk level permission on the app/SP.",
+                                     "Medium":  15,
+                                     "High":  35
+                                 },
+    "CredentialTypeDiscounts":  {
+                                    "Federated":  0.25,
+                                    "Key":  0.5,
+                                    "Description":  "Multiplier applied to credential and base points by credential type. Passwords hold the highest risk, then certificates, and federated creds with the least.",
+                                    "Password":  1
+                                },
+    "PasswordCredentialLifetimeTiers":  [
+                                            {
+                                                "MinDays":  730,
+                                                "Points":  5
+                                            },
+                                            {
+                                                "MinDays":  365,
+                                                "Points":  3
+                                            },
+                                            {
+                                                "MinDays":  180,
+                                                "Points":  2
+                                            }
+                                        ],
+    "KeyCredentialLifetimeTiers":  [
+                                       {
+                                           "MinDays":  1095,
+                                           "Points":  5
+                                       },
+                                       {
+                                           "MinDays":  730,
+                                           "Points":  3
+                                       },
+                                       {
+                                           "MinDays":  365,
+                                           "Points":  2
+                                       }
+                                   ],
+    "CredentialVolume":  {
+                             "Description":  "Multiple active credentials increase the authentication attack surface. Each active credential beyond the first adds bonus points.",
+                             "PointsPerCredentialAfterFirst":  5
+                         },
+    "CredentialRiskIndicatorTiers":  {
+                                         "Critical":  0.75,
+                                         "Medium":  0.25,
+                                         "High":  0.5
+                                     }
+},
+    "risky_delegated_permission_classifications": [
+
+],
+    "legacy_exchange_service_principal": [
+
+],
+    "dedicated_exchange_hybrid_applications": [
+    {
+        "DedicatedHybridAppConfigured":  false,
+        "Apps":  null
+    }
+],
+    "default_app_management_policy": [
+
+],
+    "app_management_policies": [
+
+],
+    "aad_successful_commands": [
+    "Get-DedicatedExchangeHybridApplications"
+],
+    "aad_unsuccessful_commands": [
+    "Get-MgBetaIdentityConditionalAccessPolicy",
+    "Get-MgBetaSubscribedSku",
+    "Get-MgBetaUserCount",
+    "Get-MgBetaPolicyAuthorizationPolicy",
+    "Get-MgBetaDirectorySetting",
+    "Get-MgBetaPolicyAuthenticationMethodPolicy",
+    "Get-MgBetaDomain",
+    "Get-ServicePrincipalsWithRiskyDelegatedPermissionClassifications",
+    "Get-MgBetaPolicyDefaultAppManagementPolicy",
+    "Get-MgBetaPolicyAppManagementPolicy",
+    "Get-PrivilegedRole",
+    "Get-PrivilegedUser",
+    "Get-ApplicationsWithRiskyPermissions",
+    "Get-ServicePrincipalsWithRiskyPermissions",
+    "Get-LegacyExchangeServicePrincipal"
+]
+        }

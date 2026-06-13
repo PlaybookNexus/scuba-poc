@@ -1,0 +1,79 @@
+﻿[2026-06-13 10:40:14.705] [Info   ] [LoggingSystem       ] ScubaGear Logging Initialized - Level: Debug, Tracing: True, Transcript: False
+[2026-06-13 10:40:14.710] [Debug  ] [AutoTrace           ] Automatic function tracing enabled - intercepting ScubaGear function calls
+[2026-06-13 10:40:14.710] [Info   ] [LoggingSystem       ] Enhanced debug logging enabled - automatic function tracing active
+[2026-06-13 10:40:14.716] [Info   ] [InvokeScuba         ] ScubaGear logging initialized
+    Data: {"Version":"1.8.0","TranscriptEnabled":{"IsPresent":false},"LogFolder":"C:\\dev\\scuba-poc\\scuba-output\\M365BaselineConformance_2026_06_13_10_40_14\\DebugLogs","OutputFolder":"C:\\dev\\scuba-poc\\scuba-output\\M365BaselineConformance_2026_06_13_10_40_14","UserPassedEnvironment":"commercial","ProductNames":"aad"}
+[2026-06-13 10:40:14.736] [Info   ] [InvokeScuba         ] Cmdlet invocation captured
+    Data: {"InvocationLine":"Invoke-SCuBA -ProductNames aad -OutPath \"C:\\dev\\scuba-poc\\scuba-output\"","Command":"Invoke-SCuBA","Parameters":{"OutPath":"C:\\dev\\scuba-poc\\scuba-output","ProductNames":["aad"]},"BoundParameterCount":2}
+[2026-06-13 10:40:14.736] [Info   ] [InvokeScuba         ] Capturing environment diagnostics
+[2026-06-13 10:40:14.748] [Debug  ] [RunDetails          ] Collecting system OS information...
+[2026-06-13 10:40:15.025] [Info   ] [RunDetails          ] System OS Information captured
+    Data: {"Build":"26200","Version":"10.0.26200","Architecture":"ARM 64-bit Processor","InstallDate":"2024-06-21 7:29:58 PM","LastBootUpTime":"2026-04-18 1:24:49 AM","OS":"Microsoft Windows 11 Home"}
+[2026-06-13 10:40:15.025] [Debug  ] [RunDetails          ] Collecting PowerShell version information...
+[2026-06-13 10:40:15.031] [Info   ] [RunDetails          ] PowerShell Version Information captured
+    Data: {"PSEdition":"Desktop","WSManStackVersion":"3.0","BuildVersion":"10.0.26100.8246","PSVersion":"5.1.26100.8246","CLRVersion":"4.0.30319.42000","PSRemotingProtocolVersion":"2.3"}
+[2026-06-13 10:40:15.031] [Debug  ] [RunDetails          ] Collecting ScubaGear version information...
+[2026-06-13 10:40:15.039] [Info   ] [RunDetails          ] ScubaGear Version Information captured
+    Data: {"InstallSource":"Development / GitHub clone","AllPaths":"N/A","CurrentModulePath":"C:\\Tools\\ScubaGear\\PowerShell\\ScubaGear","CurrentLoadedVersion":"1.8.0","InstalledCount":0,"InstalledVersions":"Not in PSModulePath"}
+[2026-06-13 10:40:15.039] [Debug  ] [RunDetails          ] Collecting OPA executable information...
+[2026-06-13 10:40:16.522] [Info   ] [RunDetails          ] OPA Executable found: opa_windows_amd64.exe
+    Data: {"Path":"C:\\Users\\claud\\.scubagear\\Tools\\opa_windows_amd64.exe","FileName":"opa_windows_amd64.exe","Version":"Version: 1.17.1","LastModified":"2026-06-08 6:34:16 AM","SizeMB":92.81,"Attributes":"Archive"}
+[2026-06-13 10:40:16.522] [Debug  ] [RunDetails          ] Checking configured OPAPath...
+[2026-06-13 10:40:16.679] [Info   ] [RunDetails          ] OPA Executable at configured path
+    Data: {"Version":"Version: 1.17.1","ResolvedPath":"C:\\Users\\claud\\.scubagear\\Tools\\opa_windows_amd64.exe","ConfiguredOPAPath":"C:\\Users\\claud\\.scubagear\\Tools","FoundAtConfiguredPath":true,"SizeMB":92.81}
+[2026-06-13 10:40:16.680] [Debug  ] [RunDetails          ] Checking network connectivity...
+[2026-06-13 10:40:17.744] [Info   ] [RunDetails          ] Network connectivity status captured
+    Data: {"InternetConnected":true,"DNSResolution":true,"DNSResult":"23.192.53.222","ProxyDetected":false,"TestTarget":"www.microsoft.com"}
+[2026-06-13 10:40:17.744] [Debug  ] [RunDetails          ] Capturing current command invocation...
+[2026-06-13 10:40:17.788] [Info   ] [RunDetails          ] Command invocation details captured
+    Data: {"CommandLine":"Write-ScubaRunDetails -IncludeLoadedModules -IncludeErrors -ConfiguredOPAPath $ScubaConfig.OPAPath -ErrorAction Stop","RecentScubaCommands":"Import-Module \"C:\\Tools\\ScubaGear\\PowerShell\\ScubaGear\\ScubaGear.psd1\" | Get-ChildItem \"C:\\Tools\\ScubaGear\" -Recurse | Unblock-File | Import-Module \"C:\\Tools\\ScubaGear\\PowerShell\\ScubaGear\\ScubaGear.psd1\"","BoundParameters":"IncludeLoadedModules=True; IncludeErrors=True; ConfiguredOPAPath=C:\\Users\\claud\\.scubagear\\Tools; ErrorAction=Stop","CalledFrom":"Invoke-SCuBA","WorkingDirectory":"C:\\dev\\scuba-poc","CurrentFunction":"Write-ScubaRunDetails","ScriptName":"C:\\Tools\\ScubaGear\\PowerShell\\ScubaGear\\Modules\\Orchestrator.psm1","ScriptLineNumber":512}
+[2026-06-13 10:40:17.790] [Debug  ] [RunDetails          ] Collecting loaded modules from memory...
+[2026-06-13 10:40:17.798] [Info   ] [RunDetails          ] Loaded modules summary
+    Data: {"ModuleNames":"BitsTransfer, CimCmdlets, Dependencies, DnsClient, Microsoft.PowerShell.Management, Microsoft.PowerShell.Utility, NetTCPIP, PackageManagement, PowerShellGet, PSReadLine, RaiseFunctionCap, ScubaGear, ScubaLogging, Support","TotalLoadedModules":14}
+[2026-06-13 10:40:17.798] [Debug  ] [RunDetails          ] Detailed loaded module information:
+[2026-06-13 10:40:17.802] [Debug  ] [RunDetails          ] Loaded module: BitsTransfer
+    Data: {"Path":"C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\BitsTransfer\\BitsTransfer.psm1","ModuleType":"Script","Name":"BitsTransfer","Version":"2.0.0.0"}
+[2026-06-13 10:40:17.804] [Debug  ] [RunDetails          ] Loaded module: CimCmdlets
+    Data: {"Path":"C:\\Windows\\Microsoft.Net\\assembly\\GAC_MSIL\\Microsoft.Management.Infrastructure.CimCmdlets\\v4.0_1.0.0.0__31bf3856ad364e35\\Microsoft.Management.Infrastructure.CimCmdlets.dll","ModuleType":"Binary","Name":"CimCmdlets","Version":"1.0.0.0"}
+[2026-06-13 10:40:17.804] [Debug  ] [RunDetails          ] Loaded module: Dependencies
+    Data: {"Path":"C:\\Tools\\ScubaGear\\PowerShell\\ScubaGear\\Dependencies.ps1","ModuleType":"Script","Name":"Dependencies","Version":"0.0"}
+[2026-06-13 10:40:17.804] [Debug  ] [RunDetails          ] Loaded module: DnsClient
+    Data: {"Path":"C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\DnsClient\\DnsClient.psd1","ModuleType":"Manifest","Name":"DnsClient","Version":"1.0.0.0"}
+[2026-06-13 10:40:17.805] [Debug  ] [RunDetails          ] Loaded module: Microsoft.PowerShell.Management
+    Data: {"Path":"C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\Microsoft.PowerShell.Management\\Microsoft.PowerShell.Management.psd1","ModuleType":"Manifest","Name":"Microsoft.PowerShell.Management","Version":"3.1.0.0"}
+[2026-06-13 10:40:17.805] [Debug  ] [RunDetails          ] Loaded module: Microsoft.PowerShell.Utility
+    Data: {"Path":"C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\Microsoft.PowerShell.Utility\\Microsoft.PowerShell.Utility.psd1","ModuleType":"Manifest","Name":"Microsoft.PowerShell.Utility","Version":"3.1.0.0"}
+[2026-06-13 10:40:17.805] [Debug  ] [RunDetails          ] Loaded module: NetTCPIP
+    Data: {"Path":"C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\NetTCPIP\\NetTCPIP.psd1","ModuleType":"Manifest","Name":"NetTCPIP","Version":"1.0.0.0"}
+[2026-06-13 10:40:17.805] [Debug  ] [RunDetails          ] Loaded module: PackageManagement
+    Data: {"Path":"C:\\Program Files\\WindowsPowerShell\\Modules\\PackageManagement\\1.0.0.1\\Microsoft.PowerShell.PackageManagement.dll","ModuleType":"Binary","Name":"PackageManagement","Version":"1.0.0.1"}
+[2026-06-13 10:40:17.805] [Debug  ] [RunDetails          ] Loaded module: PowerShellGet
+    Data: {"Path":"C:\\Program Files\\WindowsPowerShell\\Modules\\PowerShellGet\\1.0.0.1\\PSModule.psm1","ModuleType":"Script","Name":"PowerShellGet","Version":"1.0.0.1"}
+[2026-06-13 10:40:17.809] [Debug  ] [RunDetails          ] Loaded module: PSReadLine
+    Data: {"Path":"C:\\Program Files\\WindowsPowerShell\\Modules\\PSReadLine\\2.0.0\\PSReadLine.psm1","ModuleType":"Script","Name":"PSReadLine","Version":"2.0.0"}
+[2026-06-13 10:40:17.810] [Debug  ] [RunDetails          ] Loaded module: RaiseFunctionCap
+    Data: {"Path":"C:\\Tools\\ScubaGear\\PowerShell\\ScubaGear\\RaiseFunctionCap.ps1","ModuleType":"Script","Name":"RaiseFunctionCap","Version":"0.0"}
+[2026-06-13 10:40:17.811] [Debug  ] [RunDetails          ] Loaded module: ScubaGear
+    Data: {"Path":"C:\\Tools\\ScubaGear\\PowerShell\\ScubaGear\\ScubaGear.psm1","ModuleType":"Script","Name":"ScubaGear","Version":"1.8.0"}
+[2026-06-13 10:40:17.812] [Debug  ] [RunDetails          ] Loaded module: ScubaLogging
+    Data: {"Path":"C:\\Tools\\ScubaGear\\PowerShell\\ScubaGear\\Modules\\Utility\\ScubaLogging.psm1","ModuleType":"Script","Name":"ScubaLogging","Version":"0.0"}
+[2026-06-13 10:40:17.813] [Debug  ] [RunDetails          ] Loaded module: Support
+    Data: {"Path":"C:\\Tools\\ScubaGear\\PowerShell\\ScubaGear\\Modules\\Support\\Support.psm1","ModuleType":"Script","Name":"Support","Version":"0.0"}
+[2026-06-13 10:40:17.863] [Info   ] [RunDetails          ] ScubaGear-related modules currently loaded in memory
+    Data: {"Modules":"ScubaGear (1.8.0); ScubaLogging (0.0)","ModulePaths":"ScubaGear=C:\\Tools\\ScubaGear\\PowerShell\\ScubaGear; ScubaLogging=C:\\Tools\\ScubaGear\\PowerShell\\ScubaGear","Count":2}
+[2026-06-13 10:40:17.867] [Debug  ] [RunDetails          ] Collecting recent PowerShell errors...
+[2026-06-13 10:40:17.869] [Info   ] [RunDetails          ] No recent errors found in $Error variable
+[2026-06-13 10:40:17.872] [Debug  ] [ModuleSnapshot      ] Capturing module snapshot: InitialLoad
+[2026-06-13 10:40:17.881] [Debug  ] [ModuleSnapshot      ] Loaded 4 module names from RequiredVersions.ps1
+[2026-06-13 10:40:17.895] [Info   ] [ModuleSnapshot      ] Module snapshot 'InitialLoad' captured: 1 module(s)
+    Data: {"SnapshotName":"InitialLoad","ModulePathsSummary":"ScubaGear=C:\\Tools\\ScubaGear\\PowerShell\\ScubaGear","ModulePaths":["ScubaGear=C:\\Tools\\ScubaGear\\PowerShell\\ScubaGear"],"ModuleCount":1,"ModuleSummary":"ScubaGear (1.8.0)","Modules":["ScubaGear (1.8.0)"]}
+[2026-06-13 10:40:17.899] [Info   ] [InvokeScuba         ] Starting product authentication...
+    Data: {"ProductNames":"aad","M365Environment":"commercial","UsesServicePrincipal":false}
+[2026-06-13 10:42:19.200] [Error  ] [ConnectTenant       ] Authentication failed for product: aad
+    Data: {"ErrorType":"System.Diagnostics.Tracing.EventSourceException","ScriptStackTrace":"at Connect-GraphHelper, C:\\Tools\\ScubaGear\\PowerShell\\ScubaGear\\Modules\\Connection\\ConnectHelpers.psm1: line 47\r\nat Connect-Tenant, C:\\Tools\\ScubaGear\\PowerShell\\ScubaGear\\Modules\\Connection\\Connection.psm1: line 93\r\nat Invoke-Connection, C:\\Tools\\ScubaGear\\PowerShell\\ScubaGear\\Modules\\Orchestrator.psm1: line 1786\r\nat Invoke-SCuBA\u003cProcess\u003e, C:\\Tools\\ScubaGear\\PowerShell\\ScubaGear\\Modules\\Orchestrator.psm1: line 545\r\nat \u003cScriptBlock\u003e, \u003cNo file\u003e: line 1","ErrorMessage":"An error occurred when writing to a listener.","TargetObject":"N/A","Product":"aad"}
+[2026-06-13 10:42:19.216] [Warning] [InvokeScuba         ] Some products failed authentication
+    Data: {"FailedProducts":"aad"}
+[2026-06-13 10:42:19.220] [Error  ] [InvokeScuba         ] CRITICAL: All products failed authentication - aborting execution
+    Data: {"RequestedProducts":"aad","FailedProducts":"aad"}
+[2026-06-13 10:42:19.223] [Info   ] [LoggingSystem       ] ScubaGear logging session ending
+[2026-06-13 10:42:19.455] [Info   ] [Get-ScubaDebugLogReport] Applied 1 redaction rule(s) to report.

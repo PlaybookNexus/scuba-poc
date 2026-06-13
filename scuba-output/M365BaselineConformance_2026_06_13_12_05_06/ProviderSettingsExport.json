@@ -1,0 +1,122 @@
+        {
+                "baseline_version": "1",
+                "module_version": "1.8.0",
+                "date": "06/13/2026 12:05:16 Eastern Daylight Time",
+                "timestamp_zulu": "2026-06-13T16:05:16.312Z",
+                "report_uuid": "bb51eb7e-ede7-47cd-837c-28385fe1e0c7",
+                "tenant_details": [
+    {
+        "AADAdditionalData":  "Error retrieving additional data",
+        "TenantId":  "Error retrieving Tenant ID",
+        "DisplayName":  "Error retrieving Display name",
+        "DomainName":  "Error retrieving Domain name"
+    }
+],
+                "scuba_config": {
+    "OutPath":  "C:\\dev\\scuba-poc\\scuba-output",
+    "OutFolderName":  "M365BaselineConformance",
+    "SkipDoH":  false,
+    "OPAPath":  "C:\\Users\\claud\\.scubagear\\Tools",
+    "PreferredDnsResolvers":  [
+
+                              ],
+    "OutJsonFileName":  "ScubaResults",
+    "LogIn":  true,
+    "KeepIndividualJSON":  {
+                               "IsPresent":  false
+                           },
+    "OutCsvFileName":  "ScubaResults",
+    "OutReportName":  "BaselineReports",
+    "OutProviderFileName":  "ProviderSettingsExport",
+    "Organization":  "",
+    "NumberOfUUIDCharactersToTruncate":  18,
+    "AppID":  "",
+    "OutRegoFileName":  "TestResults",
+    "M365Environment":  "commercial",
+    "DisconnectOnExit":  {
+                             "IsPresent":  false
+                         },
+    "ProductNames":  "aad",
+    "OutActionPlanFileName":  "ActionPlan",
+    "CertificateThumbprint":  ""
+},
+                    "conditional_access_policies": [
+
+],
+    "cap_table_data": [],
+    "authorization_policies": [
+
+],
+    "privileged_users": [
+
+],
+    "privileged_service_principals": ,
+    "privileged_roles": [
+
+],
+    "service_plans": [
+
+],
+    "directory_settings": [
+
+],
+    "authentication_method": [
+    {
+        "authentication_method_feature_settings":  [
+
+                                                   ],
+        "authentication_method_policy":  {
+
+                                         }
+    }
+],
+    "domain_settings": [
+
+],
+    "license_information": ,
+    "license_state": [
+    {
+        "is_expiring_soon":  false,
+        "is_expired":  false,
+        "state":  "NoLicense",
+        "has_active_plans":  false,
+        "state_reason":  "No subscribed SKUs were found for the tenant.",
+        "days_until_expiration":  null,
+        "has_any_sku":  false,
+        "warning_days_threshold":  30
+    }
+],
+    "total_user_count": -1,
+    "risky_applications": [
+
+],
+    "risky_third_party_service_principals": [
+
+],
+    "legacy_exchange_service_principal": [
+
+],
+    "dedicated_exchange_hybrid_applications": [
+    {
+        "DedicatedHybridAppConfigured":  false,
+        "Apps":  null
+    }
+],
+    "aad_successful_commands": [
+    "Get-DedicatedExchangeHybridApplications"
+],
+    "aad_unsuccessful_commands": [
+    "Get-MgBetaIdentityConditionalAccessPolicy",
+    "Get-MgBetaSubscribedSku",
+    "Get-PrivilegedRole",
+    "Get-PrivilegedUser",
+    "Get-MgBetaUserCount",
+    "Get-MgBetaPolicyAuthorizationPolicy",
+    "Get-MgBetaDirectorySetting",
+    "Get-MgBetaPolicyAuthenticationMethodPolicy",
+    "Get-MgBetaDomain",
+    "Get-ApplicationsWithRiskyPermissions",
+    "Get-ServicePrincipalsWithRiskyPermissions",
+    "Get-LegacyExchangeServicePrincipal"
+]
+        }
